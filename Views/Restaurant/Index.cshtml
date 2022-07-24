@@ -12,7 +12,7 @@
   <h3>No restaurants have been added yet!</h3>
 } 
 
-@foreach (Restaurant Restaurant in Model)
+@foreach (Restaurant restaurant in Model)
 {
   <li>@Html.ActionLink($"{restaurant.Description}", "Details", new { id = restaurant.RestaurantId }) | @restaurant.Cuisine.CuisineType</li>
 }
