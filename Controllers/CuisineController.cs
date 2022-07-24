@@ -41,7 +41,7 @@ namespace BestRestaurants.Controllers
     }
     public ActionResult Edit(int id)
     {
-      var thisCuisine = _db.Cuisine.FirstOrDefault(cuisine => cuisine.Cuisine == id);
+      var thisCuisine = _db.Cuisine.FirstOrDefault(cuisine => cuisine.CuisineId == id);
       return View(thisCuisine);
     }
 
@@ -55,7 +55,7 @@ namespace BestRestaurants.Controllers
 
     public ActionResult Delete(int id)
     {
-      var thisCuisine = _db.Cuisine.FirstOrDefault(cuisine => category.Cuisine == id);
+      var thisCuisine = _db.Cuisine.FirstOrDefault(cuisine => cuisine.CuisineId == id);
       return View(thisCuisine);
     }
 
