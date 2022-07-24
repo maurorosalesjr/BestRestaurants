@@ -10,7 +10,7 @@ namespace BestRestaurants.Models
         }
 
         public int CuisineId { get; set; }
-        public string Name { get; set; }
+        public string CuisineType { get; set; }
         public virtual ICollection<Restaurant> Restaurant { get; set; }
     }
 }
